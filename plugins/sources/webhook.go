@@ -12,6 +12,9 @@ var WebHookPlugin = plugins.NewTransformPlugin("webhook", func(m *plugins.Messag
 			"event":       "webhook_source_event",
 			"properties":  m.Data,
 			"anonymousId": uuid.New().String(),
+			"context": map[string]any{
+				"transformedBy": "webhook-plugin",
+			},
 		},
 	}
 	return plugins.NewMessage(payload), nil
