@@ -7,10 +7,12 @@ import (
 
 var WebHookPlugin = plugins.NewTransformPlugin("webhook", func(m *plugins.Message) (*plugins.Message, error) {
 	payload := map[string]any{
-		"type":        "track",
-		"event":       "webhook_source_event",
-		"properties":  m.Data,
-		"anonymousId": uuid.New().String(),
+		"output": map[string]any{
+			"type":        "track",
+			"event":       "webhook_source_event",
+			"properties":  m.Data,
+			"anonymousId": uuid.New().String(),
+		},
 	}
 	return plugins.NewMessage(payload), nil
 })

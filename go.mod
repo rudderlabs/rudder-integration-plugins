@@ -2,7 +2,10 @@ module github.com/rudderlabs/rudder-integration-plugins
 
 go 1.21.2
 
-require github.com/google/uuid v1.3.1
+require (
+	github.com/google/uuid v1.3.1
+	github.com/rudderlabs/rudder-plugins-manager v0.5.1
+)
 
 require (
 	github.com/Jeffail/gabs/v2 v2.7.0 // indirect
@@ -21,7 +24,6 @@ require (
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.22 // indirect
 	github.com/rs/zerolog v1.29.0 // indirect
-	github.com/rudderlabs/rudder-plugins-manager v0.5.1 // indirect
 	github.com/samber/lo v1.37.0 // indirect
 	github.com/segmentio/ksuid v1.0.4 // indirect
 	github.com/tilinna/z85 v1.0.0 // indirect
