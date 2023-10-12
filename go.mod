@@ -4,7 +4,7 @@ go 1.21.2
 
 require (
 	github.com/google/uuid v1.3.1
-	github.com/rudderlabs/rudder-plugins-manager v0.6.1
+	github.com/rudderlabs/rudder-plugins-manager v0.7.0
 )
 
 require (
