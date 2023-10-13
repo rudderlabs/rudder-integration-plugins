@@ -5,7 +5,7 @@ import (
 	"github.com/rudderlabs/rudder-plugins-manager/plugins"
 )
 
-var WebHookPlugin = plugins.NewTransformPlugin("webhook", func(m *plugins.Message) (*plugins.Message, error) {
+var webHookPlugin = plugins.NewTransformPlugin("webhook", func(m *plugins.Message) (*plugins.Message, error) {
 	payload := map[string]any{
 		"output": map[string]any{
 			"batch": []map[string]any{
@@ -14,9 +14,6 @@ var WebHookPlugin = plugins.NewTransformPlugin("webhook", func(m *plugins.Messag
 					"event":       "webhook_source_event",
 					"properties":  m.Data,
 					"anonymousId": uuid.New().String(),
-					"context": map[string]any{
-						"transformedBy": "webhook-plugin",
-					},
 				},
 			},
 		},

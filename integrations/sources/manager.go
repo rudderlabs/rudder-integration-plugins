@@ -6,6 +6,6 @@ import (
 
 func NewSourceManager() *plugins.BasePluginManager {
 	manager := plugins.NewBasePluginManager()
-	manager.Add(WebHookPlugin)
+	manager.Add(webHookPlugin)
 	return manager
 }
