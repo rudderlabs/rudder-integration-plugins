@@ -5,6 +5,7 @@ go 1.21.2
 require (
 	github.com/google/uuid v1.3.1
 	github.com/rudderlabs/rudder-plugins-manager v0.8.0
+	github.com/stretchr/testify v1.8.4
 )
 
 require (
@@ -19,7 +20,6 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/gofrs/uuid v4.4.0+incompatible // indirect
-	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/huandu/go-clone v1.6.0 // indirect
 	github.com/huandu/go-clone/generic v1.6.0 // indirect
@@ -31,7 +31,6 @@ require (
 	github.com/rs/zerolog v1.31.0 // indirect
 	github.com/samber/lo v1.38.1 // indirect
 	github.com/segmentio/ksuid v1.0.4 // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
 	github.com/tilinna/z85 v1.0.0 // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
@@ -44,5 +43,4 @@ require (
 	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gotest.tools/v3 v3.5.1 // indirect
 )
